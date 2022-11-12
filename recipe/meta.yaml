@@ -12,7 +12,7 @@ source:
 build:
   number: 2
   script:
-    - cythonize bt/core.py
+    - rm -rf bt/core.c  # remove cythonized file in sdist
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
