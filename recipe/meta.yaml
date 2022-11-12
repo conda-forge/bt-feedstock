@@ -13,7 +13,7 @@ build:
   number: 2
   script:
     - rm -rf bt/core.c  # [not win] remove cythonized file in sdist
-    - rm -rf bt\core.c  # [win]
+    - del "bt\core.c"  # [win]
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
