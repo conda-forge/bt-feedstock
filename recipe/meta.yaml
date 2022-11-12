@@ -19,11 +19,11 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython >=0.29                          # [build_platform != target_platform]
+    - cython >=0.29.25                       # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
     - python
-    - cython >=0.29
+    - cython >=0.29.25
     - pip
   run:
     - python
