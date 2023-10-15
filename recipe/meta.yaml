@@ -10,7 +10,7 @@ source:
   sha256: d162d71aaaaf7265a848d1fc0040f503add32dac2f9f3127bece0d74c22efb9b 
 
 build:
-  number: 2
+  number: 3
   script:
     - rm -rf bt/core.c  # [not win] remove cythonized file in sdist
     - del "bt\core.c"  # [win]
