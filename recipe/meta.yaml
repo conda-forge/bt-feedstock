@@ -28,7 +28,7 @@ requirements:
     - pip
   run:
     - python
-    - ffn >=0.3.5
+    - ffn >=1
     - pyprind >=2.11
 test:
   imports:
@@ -42,7 +42,7 @@ about:
   home: https://github.com/pmorissette/bt
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: 'bt - flexible backtesting for Python'
   description: |
     bt - flexible backtesting for Python
