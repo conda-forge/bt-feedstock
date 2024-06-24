@@ -1,5 +1,5 @@
 {% set name = "bt" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 94ba468ef470c3684a5e6e0eefd32edb85576ebb58ea6635b4d01b98be4eab15
+  sha256: 5ac3d184c3e287a9f831708cee381b576d7e74eabd5050ddff2daaeed5059680
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython >=0.29.25                       # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - cython >=0.29.25
@@ -30,6 +31,7 @@ requirements:
     - python
     - ffn >=1
     - pyprind >=2.11
+    - tqdm >=4
 test:
   imports:
     - bt
