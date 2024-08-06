@@ -29,7 +29,7 @@ requirements:
     - pip
   run:
     - python
-    - ffn >=1
+    - ffn >=1.1
     - pyprind >=2.11
     - tqdm >=4
 test:
