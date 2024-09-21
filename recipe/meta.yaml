@@ -38,7 +38,6 @@ test:
     - bt
   requires:
     - pip
-    - yfinance >= 0.2.33
   commands:
     - pip check
 
