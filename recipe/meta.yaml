@@ -27,6 +27,7 @@ requirements:
     - python
     - cython >=0.29.25
     - pip
+    - setuptools
   run:
     - python
     - ffn >=1.1
