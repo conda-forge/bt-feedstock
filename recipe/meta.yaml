@@ -10,7 +10,7 @@ source:
   sha256: 201eb9a5723d9ca6426a6e96f7213ae9d2f5d2aa7934069fc466cc32dbf46b78
 
 build:
-  number: 0
+  number: 1
   script:
     - rm -rf bt/core.c  # [not win] remove cythonized file in sdist
     - del "bt\core.c"  # [win]
@@ -27,6 +27,7 @@ requirements:
     - python
     - cython >=0.29.25
     - pip
+    - setuptools
   run:
     - python
     - ffn >=1.1
