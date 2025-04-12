@@ -1,16 +1,16 @@
 {% set name = "bt" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 201eb9a5723d9ca6426a6e96f7213ae9d2f5d2aa7934069fc466cc32dbf46b78
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 55e0fa8eb5726f6b07d5118d7228dc78af6ed8d2dbb6859722ddba96f263c2b9
 
 build:
-  number: 1
+  number: 0
   script:
     - rm -rf bt/core.c  # [not win] remove cythonized file in sdist
     - del "bt\core.c"  # [win]
