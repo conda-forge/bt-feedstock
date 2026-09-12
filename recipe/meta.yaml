@@ -1,13 +1,13 @@
 {% set name = "bt" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 85bf1a2bce016aab5c871f604c09b2777b1e0121571b58341a75bedc0bcbc3f0
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: cb8075f3090e762ae75314aa5f15bcabe6252d9c2cd4b9eecb58be0b2e68a1f5
 
 build:
   number: 0
