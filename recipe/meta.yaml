@@ -26,11 +26,12 @@ requirements:
   host:
     - python
     - cython >=0.29.25
+    - hatchling
+    - hatch-cython
     - pip
-    - setuptools
   run:
     - python
-    - ffn >=1.1
+    - ffn >=1.1.2
     - pyprind >=2.11
     - tqdm >=4
 test:
@@ -47,8 +48,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: 'bt - flexible backtesting for Python'
-  description: |
-    bt - flexible backtesting for Python
+  description: bt - flexible backtesting for Python
   doc_url: http://pmorissette.github.io/bt/
   dev_url: https://github.com/pmorissette/bt
 
