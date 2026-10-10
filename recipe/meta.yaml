@@ -1,5 +1,5 @@
 {% set name = "bt" %}
-{% set version = "1.3.0" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0ff4fb24456aff7e35f29353f273ecc22489d1e59f9bda580de47c306ac3ab4
+  sha256: ad8d3d53e2be412e2a39bee9aadd9fddf121dedd3791293030595932bec0ee83
 
 build:
   number: 0
